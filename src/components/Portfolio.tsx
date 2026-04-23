@@ -114,34 +114,47 @@ const experiences = [
 
 const projects = [
   {
-    title: "MiCredix",
-    description: "Plataforma móvil para gestión de créditos y préstamos personales.",
-    image: micredixapp,
-    technologies: ["Flutter", "Java", "Spring Boot", "SQL Server"],
-    liveUrl: "https://play.google.com/store/apps/details?id=com.Mobtion.Credix.Credixcel&hl=es_VE",
-    githubUrl: "#",
-  },
-  {
-    title: "MiCredixWeb",
-    description: "Plataforma web para gestión de créditos y préstamos personales.",
-    image: micredixweb,
-    technologies: ["Angular 8+", "Java", "Spring Boot", "SQL Server"],
-    liveUrl: "https://micredix.com/personas/sign/sign-in",
-    githubUrl: "#",
-  },
-  {
-    title: "PriorityMax",
-    description: "Aplicación móvil para gestión de crédito, compra en tienda y pagos de cuotas.",
+    title: "PriorityMax (Fintech Mobile)",
+    description:
+      "Liderazgo técnico y desarrollo móvil para producto fintech nacional: arquitectura DDD + BLoC/Cubit, flujos de crédito/suscripción, integraciones backend y releases quincenales. Escaló a más de 280K usuarios Android y 6K+ en iOS.",
     image: prioritymax,
-    technologies: ["Flutter", "Dart", "Firebase", "REST APIs", "Laravel", "MySQL"],
+    technologies: ["Flutter", "Dart", "BLoC/Cubit", "DDD", "REST APIs", "Fastlane", "CI/CD"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.innovo.prioritymax&hl=es_VE",
     githubUrl: "#",
   },
   {
-    title: "Presentation Folders",
-    description: "Carpetas de presentación para proyectos y documentación técnica.",
+    title: "Long Haul (Logística en Ruta)",
+    description:
+      "Aplicación Flutter iOS/Android para operación en campo, paradas/incidencias y sincronización con backend. Incluyó evolución continua en producción y mejoras de arquitectura mobile con modularización y flavors.",
+    image: micredixapp,
+    technologies: ["Flutter", "Dart", "BLoC/Cubit", "MVVM", "Provider", "REST APIs", "Flutter Test"],
+    liveUrl: "https://play.google.com/store/apps/details?id=com.Mobtion.Credix.Credixcel&hl=es_VE",
+    githubUrl: "#",
+  },
+  {
+    title: "Plataforma de Seguros (Web Empresarial)",
+    description:
+      "Desarrollo y mantenimiento en plataforma de seguros con Java Liferay + Spring Framework, incluyendo módulos de cotizador e integraciones para migración de usuarios entre DB2 y Oracle.",
+    image: micredixweb,
+    technologies: ["Java", "Liferay", "Spring Framework", "Integraciones", "DB2", "Oracle"],
+    liveUrl: "https://micredix.com/personas/sign/sign-in",
+    githubUrl: "#",
+  },
+  {
+    title: "MiCredix (Mobile + Web)",
+    description:
+      "Suite fintech para créditos y préstamos con app móvil y plataforma web. Integración de frontend-backend, seguridad por roles y operación de negocio en producción.",
+    image: micredixweb,
+    technologies: ["Flutter", "Angular", "Spring Boot", "REST APIs", "SQL Server"],
+    liveUrl: "https://micredix.com/personas/sign/sign-in",
+    githubUrl: "#",
+  },
+  {
+    title: "E-commerce Magento 2 (Multi-proyecto)",
+    description:
+      "Implementación de módulos custom, mejoras de checkout/catálogo, soporte productivo e integraciones en tiendas Magento 2.x para clientes de distintos sectores.",
     image: presentationfolders,
-    technologies: ["Magento 2.x", "PHP", "MySQL"],
+    technologies: ["Magento 2", "PHP", "MySQL", "Linux", "Nginx/Apache", "CDN"],
     liveUrl: "https://presentationfolders.ca/",
     githubUrl: "#",
   },
