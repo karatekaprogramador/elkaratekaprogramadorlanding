@@ -3,9 +3,9 @@ import logoWhite from "@/assets/logo-white.png";
 const Header = () => {
   const navItems = [
     { label: "Inicio", href: "#hero" },
+    { label: "Resultados", href: "#proof" },
     { label: "Servicios", href: "#services" },
-    { label: "Tecnologías", href: "#tech" },
-    { label: "Sobre Mí", href: "#about" },
+    { label: "Casos", href: "#cases" },
     { label: "Contacto", href: "#contact" },
   ];
 
@@ -34,7 +34,7 @@ const Header = () => {
             href="#contact"
             className="bg-primary hover:bg-accent text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
           >
-            Contáctame
+            Agendar llamada
           </a>
         </nav>
       </div>

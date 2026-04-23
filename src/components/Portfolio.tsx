@@ -211,7 +211,7 @@ const Portfolio = () => {
         </div>
 
         {/* Proyectos */}
-        <div>
+        <div id="cases">
           <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
             <Github className="w-6 h-6 text-primary" />
             Proyectos en Producción

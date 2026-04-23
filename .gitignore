@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+cv_learn/*
+landing_changes.txt
+
+.agents/*
+skills-lock.json
