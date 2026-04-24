@@ -123,30 +123,29 @@ const projects = [
     githubUrl: "#",
   },
   {
-    title: "Long Haul (Logística en Ruta)",
-    description:
-      "Aplicación Flutter iOS/Android para operación en campo, paradas/incidencias y sincronización con backend. Incluyó evolución continua en producción y mejoras de arquitectura mobile con modularización y flavors.",
+    title: "MiCredix",
+    description: "Plataforma móvil para gestión de créditos y préstamos personales.",
     image: micredixapp,
     technologies: ["Flutter", "Dart", "BLoC/Cubit", "MVVM", "Provider", "REST APIs", "Flutter Test"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.Mobtion.Credix.Credixcel&hl=es_VE",
     githubUrl: "#",
   },
+  // {
+  //   title: "Plataforma de Seguros (Web Empresarial)",
+  //   description:
+  //     "Desarrollo y mantenimiento en plataforma de seguros con Java Liferay + Spring Framework, incluyendo módulos de cotizador e integraciones para migración de usuarios entre DB2 y Oracle.",
+  //   image: micredixweb,
+  //   technologies: ["Java", "Liferay", "Spring Framework", "Integraciones", "DB2", "Oracle"],
+  //   liveUrl: "https://micredix.com/personas/sign/sign-in",
+  //   githubUrl: "#",
+  // },
   {
-    title: "Plataforma de Seguros (Web Empresarial)",
-    description:
-      "Desarrollo y mantenimiento en plataforma de seguros con Java Liferay + Spring Framework, incluyendo módulos de cotizador e integraciones para migración de usuarios entre DB2 y Oracle.",
-    image: micredixweb,
-    technologies: ["Java", "Liferay", "Spring Framework", "Integraciones", "DB2", "Oracle"],
-    liveUrl: "https://micredix.com/personas/sign/sign-in",
-    githubUrl: "#",
-  },
-  {
-    title: "MiCredix (Mobile + Web)",
+    title: "MiCredix Web",
     description:
       "Suite fintech para créditos y préstamos con app móvil y plataforma web. Integración de frontend-backend, seguridad por roles y operación de negocio en producción.",
     image: micredixweb,
     technologies: ["Flutter", "Angular", "Spring Boot", "REST APIs", "SQL Server"],
-    liveUrl: "https://micredix.com/personas/sign/sign-in",
+    liveUrl: "https://micredix.com",
     githubUrl: "#",
   },
   {
