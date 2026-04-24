@@ -19,8 +19,7 @@ const Hero = () => {
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight max-w-4xl">
               Domina el código con la
-              <br />
-              <span className="gradient-text">disciplina de un cinturón negro</span>
+              <span className="gradient-text"> disciplina de un cinturón negro</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-[68ch] mx-auto lg:mx-0">
