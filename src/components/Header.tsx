@@ -34,7 +34,7 @@ const Header = () => {
             href="#contact"
             className="bg-primary hover:bg-accent text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
           >
-            Agendar llamada
+            Diagnóstico gratuito
           </a>
         </nav>
       </div>

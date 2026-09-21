@@ -1,35 +1,41 @@
-import { Code2, GraduationCap, Smartphone, Database, Globe, Users } from "lucide-react";
+import { Bot, Code2, FileSearch, Gauge, GraduationCap, ShieldCheck } from "lucide-react";
 
 const services = [
   {
+    icon: ShieldCheck,
+    title: "Auditoría de Sistemas Vibecodeados",
+    description:
+      "Revisión profunda de código generado con IA: deuda técnica oculta, fallas de seguridad y arquitecturas frágiles. Recibes un informe priorizado con plan de corrección.",
+  },
+  {
+    icon: FileSearch,
+    title: "Auditoría de MVPs y Sistemas Complejos",
+    description:
+      "Evaluación de escalabilidad, mantenibilidad y costos antes de seguir invirtiendo. Sabrás en qué estado real está tu producto y qué corregir primero.",
+  },
+  {
     icon: Code2,
-    title: "Desarrollo Backend",
-    description: "APIs robustas y escalables con Java, Laravel, NodeJS. Arquitecturas sólidas para tu negocio.",
-  },
-  {
-    icon: Globe,
-    title: "Desarrollo Frontend",
-    description: "Interfaces modernas y responsivas con Angular, React. Experiencias de usuario excepcionales.",
-  },
-  {
-    icon: Smartphone,
-    title: "Apps Móviles",
-    description: "Aplicaciones nativas con Flutter. Rendimiento óptimo en iOS y Android.",
-  },
-  {
-    icon: Database,
-    title: "Bases de Datos",
-    description: "Diseño y optimización de bases SQL y NoSQL. MySQL, PostgreSQL, MongoDB, Firebase.",
+    title: "Desarrollo de Sistemas a Medida",
+    description:
+      "Software robusto desde el diseño: web, móvil y backends con arquitectura feature-first y DDD, construidos para crecer sin reescribirse.",
   },
   {
     icon: GraduationCap,
-    title: "Clases de Programación",
-    description: "Formación personalizada en desarrollo web, móvil y bases de datos. Aprende haciendo.",
+    title: "Clases y Talleres de Tecnología",
+    description:
+      "Formación práctica para desarrolladores y equipos: desarrollo de software, arquitectura, buenas prácticas e IA aplicada al trabajo real.",
   },
   {
-    icon: Users,
-    title: "Mentoría Tech",
-    description: "Acompañamiento en tu carrera como desarrollador. Desde junior hasta senior.",
+    icon: Gauge,
+    title: "Optimización y Performance",
+    description:
+      "Diagnóstico y corrección de cuellos de botella en cualquier sistema: latencia, queries lentas y costos de infraestructura. Más rápido y más barato de operar.",
+  },
+  {
+    icon: Bot,
+    title: "Arquitectura Agéntica para Software",
+    description:
+      "Diseño de sistemas con agentes de IA: orquestación, automatización de QA, guardrails y flujos donde la IA opera con control y trazabilidad.",
   },
 ];
 
@@ -39,10 +45,10 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Mis <span className="gradient-text">Servicios</span>
+            Servicios con <span className="gradient-text">disciplina de dojo</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Soluciones de desarrollo y formación adaptadas a tus necesidades
+            Soluciones técnicas directas para software que debe funcionar en producción, no solo en demo
           </p>
         </div>
 

@@ -32,6 +32,8 @@ const productionStack = [
   "AWS",
   "Linode",
   "Heroku",
+  "Agentes de IA",
+  "QA Automation",
 ];
 
 const SocialProof = () => {
@@ -43,8 +45,8 @@ const SocialProof = () => {
             Resultados que <span className="gradient-text">generan confianza</span>
           </h2>
           <p className="text-muted-foreground text-lg mx-auto">
-            Trabajo con enfoque en impacto real: productos web/mobile en producción, arquitectura sólida y
-            acompañamiento técnico de alto nivel.
+            El software que funciona en producción no es suerte: es arquitectura, testing y
+            disciplina. Eso es lo que audito, optimizo y construyo.
           </p>
         </div>
 

@@ -14,22 +14,24 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/80 border border-primary/30 mb-6 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-sm text-primary font-semibold">Disponible para proyectos y mentorías</span>
+              <span className="text-sm text-primary font-semibold">Disponible para auditorías y proyectos de desarrollo</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight max-w-4xl">
-              Domina el código con la
-              <span className="gradient-text"> disciplina de un cinturón negro</span>
+              Tu sistema funciona.
+              <br />
+              <span className="gradient-text">¿Pero aguanta producción?</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-[68ch] mx-auto lg:mx-0">
-              Mentoría avanzada y desarrollo de software para empresas, equipos y desarrolladores que
-              quieren productos sólidos en producción, no solo proyectos de prueba.
+              La IA acelera el desarrollo, pero también esconde deuda técnica, fallas de seguridad y
+              arquitecturas frágiles. Audito, corrijo y reconstruyo sistemas vibecodeados, MVPs y
+              plataformas complejas para que tu producto sobreviva al mundo real.
             </p>
 
             <p className="text-sm md:text-base text-foreground/85 mb-8 max-w-[65ch] mx-auto lg:mx-0">
-              Especialidad en Flutter, arquitecturas limpias y backend escalable para fintech, e-commerce
-              y plataformas de alto impacto.
+              Especialidad en auditoría técnica, optimización y performance, desarrollo de sistemas a
+              medida, talleres de tecnología y arquitectura agéntica para software.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -38,7 +40,7 @@ const Hero = () => {
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-accent text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5"
               >
                 <ArrowRight className="w-5 h-5" />
-                Empieza tu camino hoy
+                Solicita tu diagnóstico
               </a>
               <a
                 href="#cases"
@@ -50,9 +52,9 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Experiencia en fintech</span>
-              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Web y mobile en producción</span>
-              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Acompañamiento técnico 1:1</span>
+              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Auditoría de código vibecodeado</span>
+              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Sistemas en producción reales</span>
+              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Informe técnico accionable</span>
             </div>
           </div>
 
@@ -65,10 +67,10 @@ const Hero = () => {
                 className="w-72 md:w-96 lg:w-[440px] h-auto relative z-10 animate-float drop-shadow-2xl"
               />
               <div className="absolute -bottom-2 -left-4 md:-left-10 z-20 rounded-xl bg-card/95 border border-border px-4 py-3 shadow-lg">
-                <p className="text-xs text-muted-foreground">Método de trabajo</p>
+                <p className="text-xs text-muted-foreground">Método de auditoría</p>
                 <p className="text-sm font-semibold flex items-center gap-2">
                   <BookOpen className="w-4 h-4 text-primary" />
-                  Estrategia + ejecución + resultados
+                  Detectar → priorizar → corregir
                 </p>
               </div>
             </div>
