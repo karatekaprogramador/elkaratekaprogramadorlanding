@@ -11,10 +11,10 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-5">
         <nav className="flex items-center justify-between">
-          <a href="#hero" className="flex h-10 w-[104px] items-center justify-center overflow-hidden" aria-label="Ir al inicio">
-            <img src={logoWhite} alt="El Karateka Programador" className="h-16 w-auto max-w-none" />
+          <a href="#hero" className="flex h-20 w-40 items-center justify-center overflow-hidden" aria-label="Ir al inicio">
+            <img src={logoWhite} alt="El Karateka Programador" className="h-28 w-auto max-w-none" />
           </a>
           
           <ul className="hidden md:flex items-center gap-8">
