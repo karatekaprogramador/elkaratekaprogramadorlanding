@@ -1,4 +1,4 @@
-import logoWhite from "@/assets/logo-white.png";
+import logoWhite from "@/assets/isotipo-blanco.png";
 
 const Header = () => {
   const navItems = [
