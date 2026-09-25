@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/components/LanguageProvider";
 import { CheckCircle2, ShieldCheck, Trophy, Users } from "lucide-react";
 
 const stats = [
@@ -37,16 +38,16 @@ const productionStack = [
 ];
 
 const SocialProof = () => {
+  const { t } = useLanguage();
   return (
     <section id="proof" className="py-16 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Resultados que <span className="gradient-text">generan confianza</span>
+            {t("Resultados que")} <span className="gradient-text">{t("generan confianza")}</span>
           </h2>
           <p className="text-muted-foreground text-lg mx-auto">
-            El software que funciona en producción no es suerte: es arquitectura, testing y
-            disciplina. Eso es lo que audito, optimizo y construyo.
+            {t("El software que funciona en producción no es suerte: es arquitectura, testing y disciplina. Eso es lo que audito, optimizo y construyo.")}
           </p>
         </div>
 
@@ -57,14 +58,14 @@ const SocialProof = () => {
                 <stat.icon className="w-5 h-5 text-primary" />
               </div>
               <p className="text-2xl font-bold mb-1">{stat.value}</p>
-              <p className="text-sm text-muted-foreground">{stat.label}</p>
+              <p className="text-sm text-muted-foreground">{t(stat.label)}</p>
             </div>
           ))}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="p-6 rounded-xl card-gradient border border-border">
-            <h3 className="text-lg font-semibold mb-3">Empresas y equipos</h3>
+            <h3 className="text-lg font-semibold mb-3">{t("Empresas y equipos")}</h3>
             <div className="flex flex-wrap gap-2">
               {companies.map((company) => (
                 <Badge key={company} variant="secondary" className="text-xs">
@@ -75,11 +76,11 @@ const SocialProof = () => {
           </div>
 
           <div className="p-6 rounded-xl card-gradient border border-border">
-            <h3 className="text-lg font-semibold mb-3">Stack aplicado en producción</h3>
+            <h3 className="text-lg font-semibold mb-3">{t("Stack aplicado en producción")}</h3>
             <div className="flex flex-wrap gap-2">
               {productionStack.map((tech) => (
                 <Badge key={tech} variant="outline" className="text-xs">
-                  {tech}
+                  {t(tech)}
                 </Badge>
               ))}
             </div>

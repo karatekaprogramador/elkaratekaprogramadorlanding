@@ -1,3 +1,4 @@
+import { useLanguage } from "@/components/LanguageProvider";
 import { Bot, Code2, FileSearch, Gauge, GraduationCap, ShieldCheck } from "lucide-react";
 
 const services = [
@@ -40,15 +41,16 @@ const services = [
 ];
 
 const Services = () => {
+  const { t } = useLanguage();
   return (
     <section id="services" className="py-24 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Servicios con <span className="gradient-text">disciplina de dojo</span>
+            {t("Servicios con")} <span className="gradient-text">{t("disciplina de dojo")}</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Soluciones técnicas directas para software que debe funcionar en producción, no solo en demo
+            {t("Soluciones técnicas directas para software que debe funcionar en producción, no solo en demo")}
           </p>
         </div>
 
@@ -63,10 +65,10 @@ const Services = () => {
                 <service.icon className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                {service.title}
+                {t(service.title)}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                {service.description}
+                {t(service.description)}
               </p>
             </div>
           ))}

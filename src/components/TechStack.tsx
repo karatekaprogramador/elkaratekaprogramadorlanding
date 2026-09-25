@@ -1,3 +1,5 @@
+import { useLanguage } from "@/components/LanguageProvider";
+
 const techCategories = [
   {
     title: "Lenguajes",
@@ -26,15 +28,16 @@ const techCategories = [
 ];
 
 const TechStack = () => {
+  const { t } = useLanguage();
   return (
     <section id="tech" className="py-24 bg-secondary/30 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Stack <span className="gradient-text">Tecnológico</span>
+            {t("Stack")} <span className="gradient-text">{t("Tecnológico")}</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Experiencia sólida en un amplio ecosistema de tecnologías
+            {t("Experiencia sólida en un amplio ecosistema de tecnologías")}
           </p>
         </div>
 
@@ -45,7 +48,7 @@ const TechStack = () => {
               className="p-6 rounded-xl bg-card border border-border"
             >
               <h3 className="text-lg font-semibold text-primary mb-4">
-                {category.title}
+                {t(category.title)}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {category.items.map((item) => (

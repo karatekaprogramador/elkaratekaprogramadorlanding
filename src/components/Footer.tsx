@@ -1,15 +1,17 @@
 import logoWhite from "@/assets/logo-white.png";
+import { useLanguage } from "@/components/LanguageProvider";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <img src={logoWhite} alt="Emmanuel - Karateka Programador" className="h-8 w-auto" />
+            <img src={logoWhite} alt={t("Emmanuel - Karateka Programador")} className="h-8 w-auto" />
           </div>
 
           <div className="flex items-center gap-4">
@@ -37,7 +39,7 @@ const Footer = () => {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Emmanuel. Todos los derechos reservados.
+            © {currentYear} Emmanuel. {t("Todos los derechos reservados.")}
           </p>
         </div>
       </div>

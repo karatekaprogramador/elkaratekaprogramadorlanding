@@ -1,6 +1,8 @@
 import logoWhite from "@/assets/isotipo-blanco.png";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const Header = () => {
+  const { t } = useLanguage();
   const navItems = [
     { label: "Inicio", href: "#hero" },
     { label: "Resultados", href: "#proof" },
@@ -13,7 +15,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-5">
         <nav className="flex items-center justify-between">
-          <a href="#hero" className="flex h-20 w-[240px] items-center justify-center overflow-hidden" aria-label="Ir al inicio">
+          <a href="#hero" className="flex h-20 w-[240px] items-center justify-center overflow-hidden" aria-label={t("Ir al inicio")}>
             <img src={logoWhite} alt="El Karateka Programador" className="h-[240px] w-[240px] max-w-none object-contain" />
           </a>
           
@@ -24,7 +26,7 @@ const Header = () => {
                   href={item.href}
                   className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
                 >
-                  {item.label}
+                  {t(item.label)}
                 </a>
               </li>
             ))}
@@ -34,7 +36,7 @@ const Header = () => {
             href="#contact"
             className="bg-primary hover:bg-accent text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
           >
-            Diagnóstico gratuito
+            {t("Diagnóstico gratuito")}
           </a>
         </nav>
       </div>

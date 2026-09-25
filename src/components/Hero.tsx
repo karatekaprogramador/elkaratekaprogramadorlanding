@@ -1,7 +1,9 @@
 import logoWhite from "@/assets/logo-white.png";
+import { useLanguage } from "@/components/LanguageProvider";
 import { ArrowRight, BookOpen, Code } from "lucide-react";
 
 const Hero = () => {
+  const { t } = useLanguage();
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-28">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/10" />
@@ -14,24 +16,21 @@ const Hero = () => {
           <div className="flex-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background/80 border border-primary/30 mb-6 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-sm text-primary font-semibold">Disponible para auditorías y proyectos de desarrollo</span>
+              <span className="text-sm text-primary font-semibold">{t("Disponible para auditorías y proyectos de desarrollo")}</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight max-w-4xl">
-              Tu sistema funciona.
+              {t("Tu sistema funciona.")}
               <br />
-              <span className="gradient-text">¿Pero aguanta producción?</span>
+              <span className="gradient-text">{t("¿Pero aguanta producción?")}</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-[68ch] mx-auto lg:mx-0">
-              La IA acelera el desarrollo, pero también esconde deuda técnica, fallas de seguridad y
-              arquitecturas frágiles. Audito, corrijo y reconstruyo sistemas vibecodeados, MVPs y
-              plataformas complejas para que tu producto sobreviva al mundo real.
+              {t("La IA acelera el desarrollo, pero también esconde deuda técnica, fallas de seguridad y arquitecturas frágiles. Audito, corrijo y reconstruyo sistemas vibecodeados, MVPs y plataformas complejas para que tu producto sobreviva al mundo real.")}
             </p>
 
             <p className="text-sm md:text-base text-foreground/85 mb-8 max-w-[65ch] mx-auto lg:mx-0">
-              Especialidad en auditoría técnica, optimización y performance, desarrollo de sistemas a
-              medida, talleres de tecnología y arquitectura agéntica para software.
+              {t("Especialidad en auditoría técnica, optimización y performance, desarrollo de sistemas a medida, talleres de tecnología y arquitectura agéntica para software.")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
@@ -40,21 +39,21 @@ const Hero = () => {
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-accent text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5"
               >
                 <ArrowRight className="w-5 h-5" />
-                Solicita tu diagnóstico
+                {t("Solicita tu diagnóstico")}
               </a>
               <a
                 href="#cases"
                 className="inline-flex items-center justify-center gap-2 bg-secondary/90 hover:bg-muted text-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 border border-border hover:border-primary/50"
               >
                 <Code className="w-5 h-5" />
-                Ver casos reales
+                {t("Ver casos reales")}
               </a>
             </div>
 
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Auditoría de código vibecodeado</span>
-              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Sistemas en producción reales</span>
-              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">Informe técnico accionable</span>
+              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">{t("Auditoría de código vibecodeado")}</span>
+              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">{t("Sistemas en producción reales")}</span>
+              <span className="px-3 py-1.5 rounded-full text-xs bg-card border border-border">{t("Informe técnico accionable")}</span>
             </div>
           </div>
 
@@ -63,14 +62,14 @@ const Hero = () => {
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl scale-75" />
               <img
                 src={logoWhite}
-                alt="Emmanuel - Karateka Programador"
+                alt={t("Emmanuel - Karateka Programador")}
                 className="w-72 md:w-96 lg:w-[440px] h-auto relative z-10 animate-float drop-shadow-2xl"
               />
               <div className="absolute -bottom-2 -left-4 md:-left-10 z-20 rounded-xl bg-card/95 border border-border px-4 py-3 shadow-lg">
-                <p className="text-xs text-muted-foreground">Método de auditoría</p>
+                <p className="text-xs text-muted-foreground">{t("Método de auditoría")}</p>
                 <p className="text-sm font-semibold flex items-center gap-2">
                   <BookOpen className="w-4 h-4 text-primary" />
-                  Detectar → priorizar → corregir
+                  {t("Detectar → priorizar → corregir")}
                 </p>
               </div>
             </div>

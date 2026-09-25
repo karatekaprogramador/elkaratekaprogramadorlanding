@@ -1,5 +1,6 @@
 import { ExternalLink, Github, Calendar, Building2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/components/LanguageProvider";
 import micredixapp from "@/assets/micredixapp.png";
 import micredixweb from "@/assets/micredixweb.png";
 import prioritymax from "@/assets/prioritymax.png";
@@ -160,15 +161,16 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  const { t } = useLanguage();
   return (
     <section id="portfolio" className="py-24 relative">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Mi <span className="gradient-text">Portafolio</span>
+            {t("Mi")} <span className="gradient-text">{t("Portafolio")}</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Trayectoria profesional y proyectos destacados en producción
+            {t("Trayectoria profesional y proyectos destacados en producción")}
           </p>
         </div>
 
@@ -176,7 +178,7 @@ const Portfolio = () => {
         <div className="mb-20">
           <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
             <Building2 className="w-6 h-6 text-primary" />
-            Experiencia Laboral
+            {t("Experiencia Laboral")}
           </h3>
           
           <div className="relative">
@@ -199,15 +201,15 @@ const Portfolio = () => {
                     <div className="p-6 rounded-xl card-gradient border border-border hover:border-primary/50 transition-all duration-300">
                       <div className="flex items-center gap-2 text-primary text-sm mb-2">
                         <Calendar className="w-4 h-4" />
-                        {exp.period}
+                        {t(exp.period)}
                       </div>
-                      <h4 className="text-xl font-semibold mb-1">{exp.role}</h4>
+                      <h4 className="text-xl font-semibold mb-1">{t(exp.role)}</h4>
                       <p className="text-muted-foreground text-sm mb-3">{exp.company}</p>
-                      <p className="text-muted-foreground text-sm mb-4">{exp.description}</p>
+                      <p className="text-muted-foreground text-sm mb-4">{t(exp.description)}</p>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
                           <Badge key={tech} variant="secondary" className="text-xs">
-                            {tech}
+                            {t(tech)}
                           </Badge>
                         ))}
                       </div>
@@ -226,7 +228,7 @@ const Portfolio = () => {
         <div id="cases">
           <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
             <Github className="w-6 h-6 text-primary" />
-            Proyectos en Producción
+            {t("Proyectos en Producción")}
           </h3>
           
           <div className="grid md:grid-cols-2 gap-6">
@@ -240,7 +242,7 @@ const Portfolio = () => {
                 <div className="relative h-48 overflow-hidden bg-secondary/50">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={t(project.title)}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
@@ -249,16 +251,16 @@ const Portfolio = () => {
                 {/* Project Info */}
                 <div className="p-6">
                   <h4 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                    {project.title}
+                    {t(project.title)}
                   </h4>
                   <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                    {project.description}
+                    {t(project.description)}
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="outline" className="text-xs">
-                        {tech}
+                        {t(tech)}
                       </Badge>
                     ))}
                   </div>
@@ -271,7 +273,7 @@ const Portfolio = () => {
                       className="flex items-center gap-2 text-sm text-primary hover:underline"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      Ver proyecto
+                      {t("Ver proyecto")}
                     </a>
                     <a
                       href={project.githubUrl}
@@ -280,7 +282,7 @@ const Portfolio = () => {
                       className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                     >
                       <Github className="w-4 h-4" />
-                      Código
+                      {t("Código")}
                     </a>
                   </div>
                 </div>
