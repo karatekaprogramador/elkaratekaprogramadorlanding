@@ -40,8 +40,8 @@ const productionStack = [
 const SocialProof = () => {
   const { t } = useLanguage();
   return (
-    <section id="proof" className="py-16 relative">
-      <div className="container mx-auto px-6">
+    <section id="proof" className="relative py-14 md:py-16">
+      <div className="container mx-auto px-4 sm:px-5 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {t("Resultados que")} <span className="gradient-text">{t("generan confianza")}</span>

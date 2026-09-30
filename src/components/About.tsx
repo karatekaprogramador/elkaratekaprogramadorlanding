@@ -4,9 +4,9 @@ import { useLanguage } from "@/components/LanguageProvider";
 const About = () => {
   const { t } = useLanguage();
   return (
-    <section id="about" className="py-24 relative">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <section id="about" className="relative py-16 md:py-20 lg:py-24">
+      <div className="container mx-auto px-4 sm:px-5 md:px-6">
+        <div className="flex flex-col items-center gap-10 md:gap-12 lg:flex-row lg:gap-20">
           {/* Photo with hover effect */}
           <div className="flex-shrink-0">
             <div className="relative group">

@@ -44,6 +44,8 @@ describe("English localization", () => {
       "La IA acelera el desarrollo, pero también esconde deuda técnica, fallas de seguridad y arquitecturas frágiles. Audito, corrijo y reconstruyo sistemas vibecodeados, MVPs y plataformas complejas para que tu producto sobreviva al mundo real.",
       "Revisión profunda de código generado con IA: deuda técnica oculta, fallas de seguridad y arquitecturas frágiles. Recibes un informe priorizado con plan de corrección.",
       "Plataforma móvil para gestión de créditos y préstamos personales.",
+      "Experiencia técnica destacada",
+      "Diseño e implementación de sincronización offline-first con patrón outbox sobre Isar para punto de venta, cobranzas y pedidos; mantenimiento de 1,300+ pruebas unitarias verificadas con mutation testing; corrección de bugs críticos de identidad, archivos temporales, zonas horarias y layout; rediseño pixel-perfect de 7+ pantallas desde Figma; optimización de UI reactiva con BlocSelector/buildWhen y corrección del escalado accesible de texto en 22 pantallas.",
       "Espera 30 segundos antes de volver a enviar.",
     ]) {
       expect(catalog.translations[text], text).toBeTruthy();
@@ -73,6 +75,8 @@ describe("English localization", () => {
     expect(document.body.textContent).toContain("AI speeds up development");
     expect(document.body.textContent).toContain("In-depth review of AI-generated code");
     expect(document.body.textContent).toContain("Mobile platform for managing credit");
+    expect(document.body.textContent).toContain("Multi-tenant Sales Force App");
+    expect(document.body.textContent).toContain("maintained 1,300+ unit tests");
     expect(document.body.textContent).toContain("My approach combines the discipline of karate");
     expect(document.documentElement.lang).toBe("en");
 

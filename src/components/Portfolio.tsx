@@ -9,6 +9,24 @@ import presentationfolders from "@/assets/presentationfolder.png";
 
 const experiences = [
   {
+    company: "Nextep",
+    role: "Flutter/Dart Developer",
+    period: "Experiencia técnica destacada",
+    description:
+      "Diseño e implementación de sincronización offline-first con patrón outbox sobre Isar para punto de venta, cobranzas y pedidos; mantenimiento de 1,300+ pruebas unitarias verificadas con mutation testing; corrección de bugs críticos de identidad, archivos temporales, zonas horarias y layout; rediseño pixel-perfect de 7+ pantallas desde Figma; optimización de UI reactiva con BlocSelector/buildWhen y corrección del escalado accesible de texto en 22 pantallas.",
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Isar",
+      "Offline-first",
+      "BLoC/Cubit",
+      "Mutation Testing",
+      "Flutter Test",
+      "Figma",
+      "Accesibilidad",
+    ],
+  },
+  {
     company: "Innovo Company 2020 C.A",
     role: "Desarrollador",
     period: "May 2024 - Actual | Venezuela | Equipo 8-10 personas",
@@ -163,9 +181,9 @@ const projects = [
 const Portfolio = () => {
   const { t } = useLanguage();
   return (
-    <section id="portfolio" className="py-24 relative">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+    <section id="portfolio" className="relative py-16 md:py-20 lg:py-24">
+      <div className="container mx-auto px-4 sm:px-5 md:px-6">
+        <div className="mb-10 text-center md:mb-14 lg:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {t("Mi")} <span className="gradient-text">{t("Portafolio")}</span>
           </h2>
@@ -175,36 +193,36 @@ const Portfolio = () => {
         </div>
 
         {/* Experiencia Laboral */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+        <div className="mb-14 md:mb-16 lg:mb-20">
+          <h3 className="mb-6 flex items-center gap-3 text-xl font-bold sm:text-2xl md:mb-8">
             <Building2 className="w-6 h-6 text-primary" />
             {t("Experiencia Laboral")}
           </h3>
           
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-px h-full w-0.5 bg-border" />
+            <div className="absolute left-0 h-full w-0.5 bg-border lg:left-1/2 lg:-translate-x-px" />
             
-            <div className="space-y-12">
+            <div className="space-y-8 md:space-y-10 lg:space-y-12">
               {experiences.map((exp, index) => (
                 <div
                   key={exp.company}
-                  className={`relative flex flex-col md:flex-row gap-8 ${
-                    index % 2 === 0 ? "md:flex-row-reverse" : ""
+                  className={`relative flex flex-col gap-6 lg:flex-row lg:gap-8 ${
+                    index % 2 === 0 ? "lg:flex-row-reverse" : ""
                   }`}
                 >
                   {/* Timeline dot */}
-                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
+                  <div className="absolute left-0 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-background bg-primary lg:left-1/2" />
                   
                   {/* Content */}
-                  <div className={`md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"} pl-8 md:pl-0`}>
-                    <div className="p-6 rounded-xl card-gradient border border-border hover:border-primary/50 transition-all duration-300">
+                  <div className={`pl-6 sm:pl-8 lg:w-1/2 lg:pl-0 ${index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"}`}>
+                    <div className="card-gradient rounded-xl border border-border p-4 transition-all duration-300 hover:border-primary/50 sm:p-5 lg:p-6">
                       <div className="flex items-center gap-2 text-primary text-sm mb-2">
                         <Calendar className="w-4 h-4" />
                         {t(exp.period)}
                       </div>
                       <h4 className="text-xl font-semibold mb-1">{t(exp.role)}</h4>
-                      <p className="text-muted-foreground text-sm mb-3">{exp.company}</p>
+                      <p className="text-muted-foreground text-sm mb-3">{t(exp.company)}</p>
                       <p className="text-muted-foreground text-sm mb-4">{t(exp.description)}</p>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
@@ -217,7 +235,7 @@ const Portfolio = () => {
                   </div>
                   
                   {/* Spacer for alternating layout */}
-                  <div className="hidden md:block md:w-1/2" />
+                  <div className="hidden lg:block lg:w-1/2" />
                 </div>
               ))}
             </div>
@@ -226,7 +244,7 @@ const Portfolio = () => {
 
         {/* Proyectos */}
         <div id="cases">
-          <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
+          <h3 className="mb-6 flex items-center gap-3 text-xl font-bold sm:text-2xl md:mb-8">
             <Github className="w-6 h-6 text-primary" />
             {t("Proyectos en Producción")}
           </h3>
@@ -249,7 +267,7 @@ const Portfolio = () => {
                 </div>
                 
                 {/* Project Info */}
-                <div className="p-6">
+                <div className="p-4 sm:p-5 lg:p-6">
                   <h4 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                     {t(project.title)}
                   </h4>
